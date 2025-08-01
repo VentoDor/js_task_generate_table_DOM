@@ -357,6 +357,10 @@ const people = [
 // eslint-disable-next-line no-console
 const table = document.querySelector('.dashboard');
 
+const tbody = document.createElement('tbody');
+
+table.appendChild(tbody);
+
 function sex(str) {
   if (str === 'f') {
     return 'Female';
@@ -387,5 +391,5 @@ for (let i = 0; i < people.length; i++) {
   column.appendChild(th5);
   column.appendChild(th6);
 
-  table.appendChild(column);
+  tbody.appendChild(column);
 }
